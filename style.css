@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+}
+.flexs{
+        /* display: inline; */
+        width:31.33%;
+    }
+.img{
+    width: 100%;
+    height: 300px;
+    transition: transform 3s ease;
+    animation-name: example;
+    animation-duration: 2s;
+}
+.list{
+    display: flex;
+    width: 30%;
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+}
+div{
+    width: 200px;
+    height: 400px; 
+    background-color: rgb(0, 0, 0);
+    border:1px solid black;
+    justify-content: space-evenly;
+}
+div{
+    transform: skew(30deg, 20deg);
+}
+@keyframes example {
+    /* 0%   {background-color: red;} */
+    0%{transform: rotate(270deg);}
+    /* 100%  {transform: scale(1.1);} */
+    /* /* 50%  {background-color: blue;} */
+    100% {background-color: green;} 
+  }
+  #div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+ 
